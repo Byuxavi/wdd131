@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WDD 131: Dynamic Web Fundamentals | Javier Manosalva</title>
+<meta name="description" content="Dynamic Web Fundamentals, home page for WDD131">
+<meta name="author" content="Javier A. Manosalva">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Javier M. Manosalva</span></h1>
+
+    <nav>
+    <a href="https://www.linkedin.com/in/javiermanosalva/">LinkedIn</a>
+    <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng"
+        target="_blank">Scripture</a>
+    <a href="finalproject/">Final Project</a>
+    </nav>
+</header>
+<main>
+
+<section class="card">
+    <h2>About Me</h2>
+    <div class="me">
+        <img class="profile" src="images/Trabajo.jpg" alt="Student Profile Image"
+        width="200" height="136">
+        <p>My name is Javier, and I go by Xavi. I am a web developer from Colombia, passionate about technology, learning, and traveling.</p>
+    </div>
+    <div class="country">
+        <h3>Colombia</h3>
+        <figure>
+        <img class="Flag" src="images/colombia.jpeg"
+            alt="Flag of Colombia" width="200">
+            <figcaption>Official Flag of Colombia</figcaption>
+        </figure>
+        <p>Colombia is a country located in South America. It is known for its breathtaking landscapes, vibrant coffee culture, and diverse traditions. The Andes mountains, Amazon rainforest, and beautiful beaches make Colombia a top destination for travelers worldwide. </p>
+    </div>
+    </section>
+    <section class="card">
+    <h2>Web Dev Resources</h2>
+    <div class="middle">
+        <ul>
+        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+        <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+    </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; <span id="currentyear"></span> Javier Andres Manosalva Leon, Colombia</p>
+    <p id="lastModified"></p>
+</footer>
+<script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+</script>
+</body>
+</html>
