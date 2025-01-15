@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Album - Rome, Italy</title>
+    <meta name="description" content="W02 Assignment: Picture Album">
+    <meta name="author" content="Javier Manosalva">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="temples.css">
+    <link rel="stylesheet" href="temples-large.css">
+    <script src="temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album by <span class="highlight">Javier A. Manosalva</span></h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="old.html">Old</a>
+            <a href="new.html">New</a>
+            <a href="large.html">Large</a>
+            <a href="small.html">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Rome, Italy Temple</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/Rome Italy Temple Exterior Grounds.jpeg" alt="Rome Italy Temple Exterior Grounds">
+                <figcaption>Rome Italy Temple Exterior Grounds</figcaption>
+            </figure>
+            <figure>
+                <img src="images/romeitalytemple.jpeg" alt="Rome Italy Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rome Italy Temple at Night.jpeg" alt="Rome Italy Temple at Night">
+                <figcaption>Rome Italy Temple at Sunrise</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_templeduring the day..jpeg" alt="Rome Italy Temple Interior">
+                <figcaption>Rome Italy Temple during the day</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_templefountain.jpeg" alt="Rome Italy Temple Front View">
+                <figcaption>Rome Italy Temple Front View</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_templesideview.jpeg" alt="Rome Italy Temple Side View">
+                <figcaption>Rome Italy Temple Side View</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_templeStatue.jpeg" alt="Rome Italy Temple Statue">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_templeatsunset.jpeg" alt="Rome Italy Temple Gardens">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome_italy_templeand city.jpeg" alt="Rome Italy Temple Panorama">
+                <figcaption>Rome Italy Temple and the surrounding city</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Javier Andres Manosalva Leon, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>
