@@ -4,7 +4,7 @@ document.getElementById('currentyear').textContent = currentYear;
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
-// 2. Responsive Hamburger Menu
+
 const nav = document.querySelector('nav'); 
 const hamburgerButton = document.createElement('button'); 
 hamburgerButton.setAttribute('id', 'hamburger'); 
