@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia</title>
+    <link rel="stylesheet" href="styles/colombia.css">
+    <script src="scripts/colombia.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Colombia</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/tucanlarge.webp" media="(min-width: 1024px)">
+                <source srcset="images/tucanmedium.webp" media="(min-width: 768px)">
+                <img src="images/tucansmall.webp" alt="A colorful toucan, characteristic of Colombia">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 1,141,748 sq km</li>
+                <li><strong>Population:</strong> 52,031,000</li>
+                <li><strong>Capital:</strong> Bogotá</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Colombian Peso (COP)</li>
+                <li><strong>Time Zone:</strong> UTC-5</li>
+                <li><strong>Calling Code:</strong> +57</li>
+                <li><strong>Internet TLD:</strong> .co</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather ⛅</h2>
+            <p><strong>Temperature:</strong> 22 °C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> 12 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2024 Javier Manosalva 🌟 Colombia</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
