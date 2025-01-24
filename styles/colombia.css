@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap');
 
 :root {
-    --yellow: #FFD700;
-    --blue: #0033A0;
-    --red: #CE1126;
-    --white: #FFFFFF;
-    --font-family: 'Arial', sans-serif;
-}
-
-:root {
     --primary-color: #FFDD00; 
     --secondary-color: #CE1126; 
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
 }
 
 
