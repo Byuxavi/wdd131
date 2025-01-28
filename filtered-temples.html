@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+    <meta name="description" content="Filtered Temples by old, new, large, and small">
+<meta name="author" content="Javier Manosalva">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Filtered Temples</h1>
+        <nav>
+            <button id="show-all">Home</button>
+            <button id="show-old">Old</button>
+            <button id="show-new">New</button>
+            <button id="show-large">Large</button>
+            <button id="show-small">Small</button>
+        </nav>
+    </header>
+    <main>
+        <div id="temple-cards" class="gallery"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Javier Andres Manosalva Leon, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+</html>
