@@ -6,9 +6,10 @@
     <title>Filtered Temples</title>
     <meta name="description" content="Filtered Temples by old, new, large, and small">
     <meta name="author" content="Javier Manosalva">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates&display=swap"></noscript>
+
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
@@ -16,16 +17,16 @@
     <header>
         <h1>Filtered Temples</h1>
         <nav>
-            <a href="#" id="show-all" role="button">Home</a>
-            <a href="#" id="show-old" role="button">Old</a>
-            <a href="#" id="show-new" role="button">New</a>
-            <a href="#" id="show-large" role="button">Large</a>
-            <a href="#" id="show-small" role="button">Small</a>
+            <a href="#" id="show-all">Home</a>
+            <a href="#" id="show-old">Old</a>
+            <a href="#" id="show-new">New</a>
+            <a href="#" id="show-large">Large</a>
+            <a href="#" id="show-small">Small</a>
         </nav>
     </header>
     <main>
         <h2>Explore Temples by Filters</h2>
-        <div id="temple-cards" class="gallery"></div>
+        <div id="temple-cards" class="temple-grid"></div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Javier Andres Manosalva Leon, Colombia</p>

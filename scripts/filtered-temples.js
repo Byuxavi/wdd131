@@ -27,11 +27,32 @@ const temples = [
     area: 6861,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
   },
+  {
+    templeName: "Washington D.C.",
+    location: "Kensington, Maryland, United States",
+    dedicated: "1974, November, 19",
+    area: 156558,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+  },
+  {
+    templeName: "Lima Perú",
+    location: "Lima, Perú",
+    dedicated: "1986, January, 10",
+    area: 9600,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+  },
+  {
+    templeName: "Mexico City Mexico",
+    location: "Mexico City, Mexico",
+    dedicated: "1983, December, 2",
+    area: 116642,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
 ];
 
 function renderTemples(filteredTemples) {
   const templeCards = document.getElementById("temple-cards");
-  const fragment = document.createDocumentFragment(); 
+  templeCards.innerHTML = ""; // Limpiar el contenido previo
 
   filteredTemples.forEach((temple) => {
     const templeCard = document.createElement("div");
@@ -45,13 +66,33 @@ function renderTemples(filteredTemples) {
       <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     `;
 
-    fragment.appendChild(templeCard);
+    templeCards.appendChild(templeCard);
   });
-
-  templeCards.innerHTML = ""; 
-  templeCards.appendChild(fragment); 
 }
 
-renderTemples(temples);
+
+function filterOldTemples() {
+  return temples.filter((temple) => new Date(temple.dedicated).getFullYear() < 1900);
+}
+
+function filterNewTemples() {
+  return temples.filter((temple) => new Date(temple.dedicated).getFullYear() > 2000);
+}
+
+function filterLargeTemples() {
+  return temples.filter((temple) => temple.area > 90000);
+}
+
+function filterSmallTemples() {
+  return temples.filter((temple) => temple.area < 10000);
+}
+
 
 document.getElementById("show-all").addEventListener("click", () => renderTemples(temples));
+document.getElementById("show-old").addEventListener("click", () => renderTemples(filterOldTemples()));
+document.getElementById("show-new").addEventListener("click", () => renderTemples(filterNewTemples()));
+document.getElementById("show-large").addEventListener("click", () => renderTemples(filterLargeTemples()));
+document.getElementById("show-small").addEventListener("click", () => renderTemples(filterSmallTemples()));
+
+
+renderTemples(temples);
