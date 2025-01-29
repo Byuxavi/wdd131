@@ -48,11 +48,33 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+  {
+    templeName: "Panamá City Panamá",
+    location: "Ancon, Panamá, Panama",
+    dedicated: "2008, August, 10",
+    area: 18943,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/panama-city-panama/400x250/panama-city-temple-lds-569186-wallpaper.jpg"
+},
+{
+    templeName: "Fukuoka Japan",
+    location: "Fukuoka-shi, Fukuoka, Japan",
+    dedicated: "2000, June, 11",
+    area: 10700,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fukuoka-japan/400x250/fukuoka-japan-temple-lds-306863-wallpaper.jpg"
+},
+{
+    templeName: "Helsinki Finland",
+    location: "Espoo, Uusimaa, Finland",
+    dedicated: "2006, February, 27",
+    area: 16350,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/helsinki-finland/400x250/helsinki-finland-temple-lds-354498-wallpaper.jpg"
+}
+
 ];
 
 function renderTemples(filteredTemples) {
   const templeCards = document.getElementById("temple-cards");
-  templeCards.innerHTML = ""; // Limpiar el contenido previo
+  templeCards.innerHTML = ""; 
 
   filteredTemples.forEach((temple) => {
     const templeCard = document.createElement("div");
