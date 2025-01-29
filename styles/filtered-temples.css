@@ -109,3 +109,20 @@ footer p {
     margin: 0.2rem 0;
     font-size: 0.9rem;
 }
+
+@font-face {
+    font-family: 'Great Vibes';
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/greatvibes/v9/RWmMoKWR9v4ksMfaWd_JN9XFiaQdFA.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/montserratalternates/v14/KtkxAKiDZI_td1Lkx62xHZHDtvgyQ1AnUWWg_WTW7mw.woff2') format('woff2');
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; 
+}
