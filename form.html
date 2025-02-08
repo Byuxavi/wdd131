@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Product review form page using good form design given specific field requirements and submission confirmation with a counter">
+    <meta name="author" content="Javier Manosalva">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-    <form id="review-form">
-        <h2>Product Review</h2>
-        
+    <form id="review-form" method="get" action="review.html">
+        <h1>Product Review</h1>
         <!-- Product Name -->
         <label for="product">Product Name:</label>
         <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-            <option value="fc-1888">Flux Capacitor</option>
-            <option value="fc-2050">Power Laces</option>
-            <option value="fs-1987">Time Circuits</option>
-            <option value="ac-2000">Low Voltage Reactor</option>
-            <option value="jj-1969">Warp Equalizer</option>
-        </select>
+    <option value="" disabled selected hidden>Select a Product ...</option>
+</select>
 
-        </select>
-        
+
         <!-- Overall Rating -->
         <fieldset>
             <legend>Overall Rating:</legend>
@@ -78,7 +73,7 @@
         <input type="submit" value="Submit Review">
     </form>
     
-    <script src="js/script.js"></script>
+    <script src="scripts/form.js"></script>
     <footer>
         <p>&copy; 2025 Javier Manosalva. Todos los derechos reservados.</p>
     </footer>
