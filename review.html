@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
-    <h2>¡Gracias por tu reseña!</h2>
-    <p>Reseñaste el producto: <strong><span id="reviewed-product"></span></strong></p>
-    <p>Total de reseñas enviadas: <span id="review-count">0</span></p>
-    <a href="form.html">Enviar otra reseña</a>
+    <h2>Thank you for your review!</h2>
+    <p>You reviewed the product: <strong><span id="reviewed-product"></span></strong></p>
+    <p>Total reviews submitted: <span id="review-count">0</span></p>
+    <a href="form.html">Submit another review</a>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -25,16 +25,20 @@
                 "jj-1969": "Warp Equalizer"
             };
 
-            // Mostrar el producto reseñado o "Desconocido"
+            
             document.getElementById("reviewed-product").textContent = productNames[productId] || "Unknown Product";
 
-            // Contador de reseñas
+            
             let reviewCount = parseInt(localStorage.getItem("reviewCount")) || 0;
             reviewCount++;
             localStorage.setItem("reviewCount", reviewCount);
             document.getElementById("review-count").textContent = reviewCount;
         });
     </script>
+    <footer>
+        <p>&copy; 2025 Javier Manosalva. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
 

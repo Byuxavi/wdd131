@@ -119,9 +119,9 @@ body {
 .cta-button:hover {
     background: #0e8ebd;
 }
-/* 🎨 Estilo para la sección de Preguntas Frecuentes (FAQ) */
+
 .faq {
-    background-color: var(--secondary-color); /* Azul claro */
+    background-color: var(--secondary-color); 
     padding: 40px 20px;
     border-radius: 10px;
     text-align: center;
@@ -132,7 +132,7 @@ body {
 }
 
 .faq h2 {
-    color: var(--primary-color); /* Azul oscuro */
+    color: var(--primary-color); 
     font-size: 26px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -145,7 +145,7 @@ body {
 }
 
 .faq-item {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 8px;
     text-align: left;
@@ -158,7 +158,7 @@ body {
 }
 
 .faq-item h3 {
-    color: var(--primary-color); /* Azul oscuro */
+    color: var(--primary-color); 
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -181,9 +181,9 @@ body {
     color: #0f172a; 
 }
 
-/* 📌 Estilo general del formulario */
+
 form {
-    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    background: rgba(255, 255, 255, 0.1); 
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -191,13 +191,13 @@ form {
     max-width: 500px;
     margin: 50px auto;
     text-align: left;
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    backdrop-filter: blur(10px); 
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* 📌 Estilo del título */
+
 form h2 {
     text-align: center;
     color: var(--secondary-color);
@@ -205,7 +205,7 @@ form h2 {
     margin-bottom: 20px;
 }
 
-/* 📌 Estilos para etiquetas */
+
 label, legend {
     font-size: 16px;
     font-weight: bold;
@@ -214,7 +214,7 @@ label, legend {
     margin-bottom: 5px;
 }
 
-/* 📌 Campos de entrada y select */
+
 input, select, textarea {
     width: 100%;
     padding: 10px;
@@ -227,13 +227,13 @@ input, select, textarea {
     transition: all 0.3s ease;
 }
 
-/* 📌 Efecto cuando el usuario interactúa */
+
 input:focus, select:focus, textarea:focus {
     outline: 2px solid var(--secondary-color);
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* 📌 Organización de los fieldsets */
+
 fieldset {
     border: none;
     padding: 10px 0;
@@ -242,12 +242,12 @@ fieldset {
     gap: 8px;
 }
 
-/* 📌 Estilo de checkboxes */
+
 input[type="checkbox"] {
     margin-right: 8px;
 }
 
-/* 📌 Estilo del botón de envío */
+
 input[type="submit"] {
     background-color: var(--secondary-color);
     color: white;
@@ -265,7 +265,7 @@ input[type="submit"]:hover {
     transform: scale(1.05);
 }
 
-/* 📌 Estilos para el sistema de estrellas */
+
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
@@ -284,18 +284,18 @@ input[type="submit"]:hover {
     transition: color 0.3s ease;
 }
 
-/* ⭐ Efecto de estrellas llenas al pasar el mouse */
+
 .star-rating label:hover,
 .star-rating label:hover ~ label {
     color: gold;
 }
 
-/* ⭐ Efecto cuando se selecciona una estrella */
+
 .star-rating input:checked ~ label {
     color: gold;
 }
 
-/* 📌 Responsividad */
+
 @media (max-width: 600px) {
     form {
         width: 95%;
@@ -314,7 +314,7 @@ input[type="submit"]:hover {
         font-size: 16px;
     }
 }
-/* 📌 Mejoras en el sistema de estrellas */
+
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
@@ -333,19 +333,19 @@ input[type="submit"]:hover {
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* ⭐ Cambia de color cuando pasas el mouse */
+
 .star-rating label:hover,
 .star-rating label:hover ~ label {
     color: gold;
     transform: scale(1.2);
 }
 
-/* ⭐ Se quedan doradas cuando se seleccionan */
+
 .star-rating input:checked ~ label {
     color: gold;
 }
 
-/* 📌 Mejor organización para los checkboxes */
+
 .checkbox-group {
     display: flex;
     flex-wrap: wrap;
@@ -363,19 +363,19 @@ input[type="submit"]:hover {
     cursor: pointer;
 }
 
-/* 📌 Cambia de color cuando se selecciona */
+
 .checkbox-group input[type="checkbox"]:checked + label {
     background: var(--secondary-color);
     color: white;
     font-weight: bold;
 }
 
-/* 🔲 Oculta los checkboxes pero siguen siendo funcionales */
+
 .checkbox-group input {
     display: none;
 }
 
-/* 🎨 Estilo de las etiquetas (botones seleccionables) */
+
 .checkbox-group label {
     display: inline-block;
     padding: 12px 20px;
@@ -390,7 +390,7 @@ input[type="submit"]:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ✨ Efecto al pasar el mouse */
+
 .checkbox-group label:hover {
     background: #60A5FA;
     transform: scale(1.05);
