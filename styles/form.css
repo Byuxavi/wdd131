@@ -408,3 +408,15 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
     margin-right: 8px;
 }
+
+select option {
+    color: #1E3A8A; ;  
+    background-color: white; 
+    padding: 5px;
+}
+
+
+select option:hover {
+    background-color: #007bff; 
+    color: white; 
+}
